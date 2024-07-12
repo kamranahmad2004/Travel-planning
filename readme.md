@@ -1,4 +1,5 @@
 Simple Travel Planning Website:
+
 This repository contains the code for a simple travel planning website built using HTML, CSS, and the Bootstrap CSS framework. This website provides an easy-to-use interface 
 for users to plan their travels, offering features such as destination information, itinerary planning, and a responsive design that works seamlessly across different devices.
 
