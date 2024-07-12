@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Plaining</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="Styling/style.css">
+</head>
+
+<body>
+  <!-- Navbar Starts -->
+  <nav class="navbar navbar-expand-sm gx-0 navbar-dark bg-dark py-md-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase" href="#index.html">WorldTours</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fs-5 text-capitalize">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#index.html">Home</a>
+          </li>
+          <li class="nav-item ps-md-3">
+            <a class="nav-link" href="#Packages">Packages</a>
+          </li>
+          <li class="nav-item ps-md-3">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar Ends -->
+
+  <!-- Main starts -->
+  <main>
+    <div class="modal fade" tabindex="-1" id="modalbox">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Book a tour</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="row g-2">
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input type="email" name="gmail" id="personalEmail" class="form-control"
+                      placeholder="Place your email">
+                    <label for="personalEmail">Email Address</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <select name="selection" id="selecting" class="form-select">
+                      <option value="norway">Tromso, Norway - $899</option>
+                      <option value="iceland">Reykjavik, Iceland - $799</option>
+                      <option value="canada">Yukon, Canada - $789</option>
+                    </select>
+                    <label for="selecting">Select a tour</label>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="carouselSlider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-slider">
+          <img src="Assets/Slider images/slider-img1.jpg" class="d-block s-img" alt="slider-img1">
+          <div class="carousel-caption top-0 mt-5">
+            <p class="text-capitalize fs-3 mt-5">Discover the Hidden World</p>
+            <h1 class="display-2 text-capitalize fw-bolder">The World Tours</h1>
+            <button class="btn btn-primary text-capitalize mt-4 px-lg-4 py-lg-2 fs-5" data-bs-toggle="modal"
+              data-bs-target="#modalbox">Book Now</button>
+          </div>
+        </div>
+        <div class="carousel-item c-slider">
+          <img src="Assets/Slider images/slider-img2.jpg" class="d-block w-100 s-img" alt="slider-img2">
+          <div class="carousel-caption d-block top-0 mt-5">
+            <p class="fs-3 mt-5 text-capitalize">The Season has arrived</p>
+            <h1 class="display-2 fw-bolder text-capitalize">3 available tours</h1>
+            <button class="btn btn-primary text-capitalize mt-4 px-lg-4 py-lg-2 fs-5" data-bs-toggle="modal"
+              data-bs-target="#modalbox">Book Now</button>
+          </div>
+        </div>
+        <div class="carousel-item c-slider">
+          <img src="Assets/Slider images/slider-img3.jpg" class="d-block w-100 s-img" alt="slider-img3">
+          <div class="carousel-caption d-md-block top-0 mt-5">
+            <p class="fs-3 mt-5 text-capitalize">Destination activities</p>
+            <h1 class="display-2 fw-bolder text-capitalize">Go to glacier hicking</h1>
+            <button class="btn btn-primary text-capitalize mt-4 px-lg-4 py-lg-2 fs-5" data-bs-toggle="modal"
+              data-bs-target="#modalbox">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="overview">
+      <div class="container h-100 d-flex align-items-center">
+        <div class="row w-100 text-center fs-4">
+          <div class="col-xl">
+            <i class="bi bi-airplane-fill"></i>
+            <span>3 amazing destinations</span>
+          </div>
+          <div class="col-xl pt-2">
+            <i class="bi bi-wallet-fill"></i>
+            <span>Only pay 5% up front</span>
+          </div>
+          <div class="col-xl pt-2">
+            <i class="bi bi-patch-check-fill"></i>
+            <span>1000's of customers</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="Packages" class="py-md-5 py-3">
+      <h2 class="text-center text-capitalize fw-bold fs-md-2 my-sm-5 my-4">Our Packages</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 my-md-0 my-3">
+            <div class="card">
+              <img src="Assets/Card Images/card1.jpg" class="card-img-top" alt="card-image">
+              <div class="card-body">
+                <h5 class="card-title">Fairy Meadows - $999</h5>
+                <p class="card-text">Fairy Meadows, named by German climbers and locally known as Joot, is an area of
+                  grassland.</p>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalbox">Book now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 my-md-0 my-3">
+            <div class="card">
+              <img src="Assets/Card Images/card-img2.jpg" class="card-img-top" alt="card-image">
+              <div class="card-body">
+                <h5 class="card-title">Huayna Picchu - $899</h5>
+                <p class="card-text">Huayna Picchu Wayna Pikchu, is a mountain in Peru around which the Urubamba River
+                  bends.</p>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalbox">Book now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 my-md-0  my-3">
+            <div class="card">
+              <img src="Assets/Card Images/card-img3.jpg" class="card-img-top" alt="card-image">
+              <div class="card-body">
+                <h5 class="card-title">California - $896</h5>
+                <p class="card-text">California is a state in the Western United States, lying on the American Pacific
+                  Coast.</p>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalbox">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-5" id="faq">
+      <h2 class="my-4 text-center">FAQ</h2>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-9">
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    How long are the trips?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    A trip to Norway or other places offers breathtaking landscapes, from the stunning fjords of the
+                    western
+                    coast to the northern lights illuminating the Arctic sky. Visitors can explore charming cities like
+                    Oslo
+                    and Bergen, rich in history and culture, while also enjoying outdoor adventures such as hiking,
+                    skiing,
+                    and fjord cruises. The serene natural beauty and vibrant urban experiences make Norway a captivating
+                    destination for travelers.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Is the flight included?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Whether the flight is included in a trip depends on the travel package you choose. Some tour
+                    packages
+                    offer all-inclusive options, covering flights, accommodations, and activities, while others may only
+                    include land arrangements such as hotels, meals, and tours.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Can i cancel after booking?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Cancellation policies vary by airline and travel agency. Some tickets and travel packages are
+                    refundable
+                    or can be canceled for a fee, while others are non-refundable. Flexible fare options and travel
+                    insurance can provide additional protection. Always check the specific terms and conditions before
+                    booking.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark py-5 mt-5">
+    <div class="container text-light text-center mb-0">
+      <p class="display-5 mb-3 ">WorldTours</p>
+      <small class="text-white-50">&copy; copyright by WorldTours. All rights reserved!</small>
+    </div>
+  </footer>
+  <!-- Add Script -->
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+</body>
+
+</html>
